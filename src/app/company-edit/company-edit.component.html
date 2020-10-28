@@ -1,0 +1,184 @@
+<!-- <div class="all">
+    <div class="wrapper">
+      <div class="title">Registration Form</div>
+      <div class="form">
+        <div class="inputfield">
+          <label>email</label>
+          <input #email type="text" class="input" name="email" />
+        </div>
+        <div class="inputfield">
+          <label>Owner</label>
+          <input #owner type="text" class="input" name="owner" />
+        </div> -->
+
+<!-- <div class="inputfield">
+          <label>Field</label>
+          <input #fieldval type="text" class="input" name="field" />
+        </div> -->
+
+<!-- <div class="inputfield">
+          <label>Field</label>
+          <div class="custom_select">
+            <select #field name="field">
+              <option selected="none"></option>
+              <option value="technical">technical</option>
+              <option value="science">science</option>
+              <option value="sells">sells</option>
+            </select>
+          </div>
+        </div>
+  
+        <div class="inputfield">
+          <label>Number Of Employees </label>
+          <input
+            #numberOfEmployee
+            type="text"
+            class="input"
+            name="numberOfEmployee"
+          />
+        </div>
+        <div class="inputfield">
+          <label>About</label>
+          <textarea #about class="textarea" name="about"></textarea>
+        </div>
+        <div class="inputfield">
+          <label>Location</label>
+          <input #location type="text" class="input" name="location" />
+        </div>
+        <div class="inputfield">
+          <label>WebSite</label>
+          <input #website type="text" class="input" name="website" />
+        </div> -->
+<!-- <div class="inputfield">
+          <label>image</label>
+          <input
+            #logo
+            type="file"
+            class="input"
+            name="logo"
+            (change)="imgUpload($event)"
+          />
+        </div> -->
+
+<!-- <div class="inputfield">
+          <button
+            (click)="takedata([email.value, owner.value, field.value, numberOfEmployee.value, location.value, website.value, about.value], [email.name, owner.name, field.name, numberOfEmployee.name, location.name, website.name, about.name], this.tokenCompany )"
+          >
+            Registration
+          </button>
+        </div>
+      </div>
+    </div>
+  </div> -->
+<div class="main-panel" style="padding-left: 27%;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 grid-margin stretch-card">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-title font-weight-bold">About</p>
+            <hr />
+            <p class="card-description">User Information</p>
+            <ul class="about">
+            
+              <li class="about-items">
+                <i class="mdi mdi-format-align-left icon-sm"></i
+                ><span class="about-item-name">Owner:</span
+                ><input #owner class="textarea" name="owner">
+              </li>
+              <li class="about-items">
+                <i class="mdi mdi-format-align-left icon-sm"></i
+                ><span class="about-item-name">About Us:</span
+                ><textarea #about class="textarea" name="about"></textarea>
+              </li>
+
+              <li class="about-items">
+                <i class="mdi mdi-trophy-variant-outline icon-sm"></i
+                ><span class="about-item-name">Our Field:</span
+                ><select #field name="field">
+                  <option selected="none"></option>
+                  <option value="technical">technical</option>
+                  <option value="science">science</option>
+                  <option value="sells">sells</option>
+                </select>
+              </li>
+            </ul>
+            <p class="card-description">Contact Information</p>
+            <ul class="about">
+              <li class="about-items">
+                <i class="mdi mdi-phone icon-sm"></i
+                ><span class="about-item-name">Phone:</span
+                ><span class="about-item-detail">+21697798611</span>
+              </li>
+              <li class="about-items">
+                <i class="mdi mdi-map-marker icon-sm"></i
+                ><span class="about-item-name">Address:</span>
+                <input #location type="text" class="input" name="location" />
+              </li>
+              <li class="about-items">
+                <i class="mdi mdi-email-outline icon-sm"></i
+                ><span class="about-item-name">Email:</span
+                ><input #email type="text" class="input" name="email" />
+              </li>
+              <li class="about-items">
+                <i class="mdi mdi-map-marker icon-sm"></i
+                ><span class="about-item-name">Number Of employees:</span>
+                <input
+                  #numberOfEmployee
+                  type="text"
+                  class="input"
+                  name=" numberOfEmployee"
+                />
+              </li>
+              <li class="about-items">
+                <i class="mdi mdi-web icon-sm"></i
+                ><span class="about-item-name">Site:</span
+                ><input #website type="text" class="input" name="website" />
+              </li>
+
+              <a class="about-item-edit left">
+                <i
+                  class="material-icons"
+                  (click)="
+                    takedata(
+                      [
+                        email.value,
+                        owner.value,
+                        field.value,
+                        numberOfEmployee.value,
+                        location.value,
+                        website.value,
+                        about.value
+                      ],
+                      [
+                        email.name,
+                        owner.name,
+                        field.name,
+                        numberOfEmployee.name,
+                        location.name,
+                        website.name,
+                        about.name
+                      ],
+                      this.tokenCompany
+                    )
+                  "
+                  >Registration</i
+                >
+                
+              </a>
+              <a class="about-item-edit left">
+                <i
+                  class="material-icons"
+                  (click)="backProfile()"
+                    
+                  >Back to profile</i
+                >
+                
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

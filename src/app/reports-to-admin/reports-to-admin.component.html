@@ -1,0 +1,22 @@
+<div>
+<label>
+    Name:
+    <input type="text" [formControl]="username">
+  </label>
+  <label>
+    type of user:
+    <select [formControl]="typeOfUser">
+        <option value="student">Student</option>
+        <option value="company">Company</option>
+        <option value="training center">Training Center</option>
+    </select>   
+  </label>
+  <label>
+    your report:
+    <input type="textarea" [formControl]="message">
+  </label>
+  <label>
+    submit
+    <input type="submit" (click) ="submitForm(username.value, typeOfUser.value, message.value)">
+  </label>
+</div>

@@ -1,0 +1,30 @@
+#card {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: blue;
+    background-image: url("../../assets/images/company.jpg");
+    background-size: cover; */
+  }
+  img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  .left {
+    width: 9%;
+  }
+  .list-group{
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      border: 2px solid black;
+  }
+  p{
+    color:black;
+      text-align: center;
+      font-size: x-large;
+      font-style: italic;
+  }
+  .list-group-item{
+      font-style: italic;
+  }

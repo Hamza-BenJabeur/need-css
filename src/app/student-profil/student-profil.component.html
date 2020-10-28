@@ -1,0 +1,399 @@
+<!-- <div class="mid">
+  <label for="Search Profil"></label>
+  <input type="text" class="in" name="search" #search />
+  <button class="big" (click)="searchProfil(search.value)">search</button>
+</div> -->
+
+<!-- /container fluid-->
+<!-- <div class="container father">
+  
+<div class="container-fluid child pic-name">
+  <div class="row">
+    <div class="fb-profile">
+      <div class="fb-profile-text pic">
+          <img class="img" src="{{ this.userData?.profilePic }}" />
+          <h5>{{ this.userData?.username }}</h5>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="col-sm-8 child">
+    <div data-spy="scroll" class="tabbable-panel">
+      <div class="tabbable-line">
+        <ul class="nav nav-tabs">
+          <li class="active">
+            <a href="#tab_default_1" data-toggle="tab"> About </a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="tab_default_1"></div>
+        </div>
+        <div class="tab-content">
+          <div class="tab-pane active" id="tab_default_1">
+            <h4>First Name :</h4>
+            <p>
+              {{ this.userData?.firstname }}
+            </p>
+            <h4>Last Name :</h4>
+            <p>
+              {{ this.userData?.lastname }}
+            </p>
+            <h4>Email :</h4>
+            <p>
+              {{ this.userData?.email }}
+            </p>
+
+            <h4>Education& Career</h4>
+
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="email">Highest Education :</label>
+                  <p>{{ this.userData?.educationlvl }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Field :</label>
+                  <p>{{ this.userData?.field }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Languages :</label>
+                  <p>{{ this.userData?.languages }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Hobbies :</label>
+                  <p>{{ this.userData?.hobbies }}</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="email">Dream Job:</label>
+                  <p>{{ this.userData?.dreamJob }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Driving Licence :</label>
+                  <p>{{ this.userData?.driving }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Facebook_link :</label>
+                  <p>{{ this.userData?.socialLink }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Skills :</label>
+                  <p>{{ this.userData?.skills }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane" id="tab_default_4">
+            <p>Lifestyle</p>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="email">Highest Education:</label>
+                  <p>{{ this.userData?.field }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Place of Birth:</label>
+                  <p>{{ this.userData?.placeOfBirth }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Place of Birth:</label>
+                  <p>{{ this.userData?.placeOfBirth }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Place of Birth:</label>
+                  <p>{{ this.userData?.placeOfBirth }}</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="email">Place of Birth:</label>
+                  <p>{{ this.userData?.placeOfBirth }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Place of Birth:</label>
+                  <p>{{ this.userData?.placeOfBirth }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Place of Birth:</label>
+                  <p>{{ this.userData?.placeOfBirth }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Place of Birth:</label>
+                  <p>{{ this.userData?.placeOfBirth }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 child">
+    <div class="panel panel-default">
+      <div class="menu_title">General Information</div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="form-group">
+              <h4>Address :</h4>
+              <label for="email">City :</label>
+              <p>{{ this.userData?.city }}</p>
+            </div>
+            <div class="form-group">
+              <label for="email">Country :</label>
+              <p>{{ this.userData?.country }}</p>
+            </div>
+            <div class="form-group">
+              <label for="email">Nationality :</label>
+              <p>{{ this.userData?.nationality }}</p>
+            </div>
+            <div class="form-group">
+              <label for="email">Date Of Birth :</label>
+              <p>{{ this.userData?.dateOfBirth }}</p>
+            </div>
+            <div class="form-group">
+              <label for="email">Place Of Birth :</label>
+              <p>{{ this.userData?.placeOfBirth }}</p>
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn-danger btn-block"
+              (click)="navToEdit()"
+            >
+              Edit profile
+            </button>
+            <button
+            class="btn btn-danger btn-block"
+            type="submit"
+            (click)="feed()">feed</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+<div id="main">
+  <div class="container">
+    <div class="main-body">
+      <!-- Breadcrumb -->
+      <nav aria-label="breadcrumb" class="main-breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/feed/student">feed</a></li>
+          <li class="breadcrumb-item"><a href="/studentProfile">User</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            User Profile
+          </li>
+          <a href="/"><li class="left"><i class="  fas fa-sign-out-alt"></i></li></a>
+          
+          <a (click) = "takeMeToReports()" class="report">send Report</a>
+        </ol>
+      </nav>
+      <!-- /Breadcrumb -->
+
+      <div class="row gutters-sm">
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex flex-column align-items-center text-center">
+                <img
+                  src="{{ this.userData?.profilePic }}"
+                  alt="Admin"
+                  class="rounded-circle"
+                  width="200"
+                />
+                <div class="mt-3">
+                  <h4>
+                    {{
+                      this.userData?.firstname + " " + this.userData?.lastname
+                    }}
+                  </h4>
+
+                  <button class="btn btn-outline-primary" (click)="navToEdit()">
+                    edit profile
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mt-3">
+            <ul class="list-group list-group-flush">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center flex-wrap"
+              >
+                <h6 class="mb-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-facebook mr-2 icon-inline text-primary"
+                  >
+                    <path
+                      d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                    ></path></svg>Facebook
+                </h6>
+                <span class="text-secondary">{{
+                  this.userData?.socialLink
+                }}</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card mb-3">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-3">
+                  <h6 class="mb-0">First Name :</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                  {{ this.userData?.firstname }}
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-sm-3">
+                  <h6 class="mb-0">Last Name :</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                  {{ this.userData?.lastname }}
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-sm-3">
+                  <h6 class="mb-0">Email :</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                  {{ this.userData?.email }}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row gutters-sm">
+            <div class="col-sm-6 mb-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">level:</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      {{ this.userData?.educationlvl }}
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">field :</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      {{ this.userData?.field }}
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">language:</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      {{ this.userData?.languages }}
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">hobbies :</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      {{ this.userData?.hobbies }}
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">dream-Job :</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      {{ this.userData?.dreamJob }}
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">skills :</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      {{ this.userData?.skills }}
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">driving liscence :</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      {{ this.userData?.driving }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 mb-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">city :</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      {{ this.userData?.city }}
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">country :</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      {{ this.userData?.country }}
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">nationality :</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      {{ this.userData?.nationality }}
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">date of birth :</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      {{ this.userData?.dateOfBirth }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<button (click)="samira(this.userData.firstname , this.userData.lastname , this.userData.city , this.userData.profilePic , this.userData.email ,this.userData.driving)">click me</button>

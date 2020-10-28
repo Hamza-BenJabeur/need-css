@@ -1,0 +1,32 @@
+<h2>reports of users</h2>
+
+<div class="all">
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">user name</th>
+          <th scope="col">type of user</th>
+          <th scope="col">message</th>
+          <th scope="col">delete <button (click) = "deleteAll()">delete All</button></th>
+          
+        </tr>
+      </thead>
+      <tbody *ngFor="let element of reports">
+        <tr>
+            <th>
+             {{ this.element?.username }}
+          </th>
+          <th>
+            {{ this.element?.typeOfUser }}
+          </th>
+          <th>
+            {{ this.element?.message }}
+          </th>
+          <th (click) ="deleteReport(this.element?.id)" class="btn">
+               delete
+          </th>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>

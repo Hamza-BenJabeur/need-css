@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+#container {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 7%;
+  height: 50%;
+  width: 100%;
+}
+#bg-container {
+  width: 40%;
+}
+
+.content-container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-container h1 {
+  color: steelblue;
+  font-weight: 900;
+  font-size: 500%;
+  line-height: 0.9em;
+  margin-bottom: 7%;
+}
+
+.app {
+  margin-left: 10%;
+  margin-top: 20%;
+}
+.app h3 {
+  color: steelblue;
+  font-weight: 600;
+  font-size: 300%;
+  line-height: 0.9em;
+  margin-bottom: 7%;
+}
+.content-container p {
+  line-height: 1.8em;
+  font-weight: 500;
+}
+
+.content-container button {
+  border: none;
+  outline: none;
+  color: rgb(47, 81, 109);
+  background-color: skyblue;
+  padding: 16px 0px;
+  border-radius: 40px;
+  font-size: 16px;
+  width: 160px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.content-container button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 1000px) {
+  .img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .content-container h1 {
+    color: steelblue;
+    font-weight: 900;
+    font-size: 200%;
+    line-height: 0.9em;
+    margin-bottom: 7%;
+  }
+}

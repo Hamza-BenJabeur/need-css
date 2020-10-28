@@ -1,0 +1,15 @@
+<div class="login-page">
+  <div class="form">
+    <form>
+      <input type="text" placeholder="&#xf007;  username" name="admin" #admin />
+      <input
+        type="password"
+        placeholder="&#xf023;  password"
+        #password
+        name="password"
+      />
+      <button (click)="login(admin.value , password.value)">LOGIN</button>
+      <p class="message"></p>
+    </form>
+  </div>
+</div>

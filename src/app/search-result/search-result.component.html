@@ -1,0 +1,160 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="fb-profile">
+      <div class="fb-profile-text father">
+        <div class="bord">
+          <img class="img" src="{{ this.userData?.profilePic }}" />
+          <h5>{{ this.userData?.username }}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /container fluid-->
+<div class="container">
+  <div class="col-sm-8">
+    <div data-spy="scroll" class="tabbable-panel">
+      <div class="tabbable-line">
+        <ul class="nav nav-tabs">
+          <li class="active">
+            <a href="#tab_default_1" data-toggle="tab"> About </a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="tab_default_1"></div>
+        </div>
+        <div class="tab-content">
+          <div class="tab-pane active" id="tab_default_1">
+            <h4>First Name :</h4>
+            <p>
+              {{ this.userData?.firstname }}
+            </p>
+            <h4>Last Name :</h4>
+            <p>
+              {{ this.userData?.lastname }}
+            </p>
+            <h4>Email :</h4>
+            <p>
+              {{ this.userData?.email }}
+            </p>
+
+            <h4>Education& Career</h4>
+
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="email">Highest Education :</label>
+                  <p>{{ this.userData?.educationlvl }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Field :</label>
+                  <p>{{ this.userData?.field }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Languages :</label>
+                  <p>{{ this.userData?.languages }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Hobbies :</label>
+                  <p>{{ this.userData?.hobbies }}</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="email">Dream Job:</label>
+                  <p>{{ this.userData?.dreamJob }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Driving Licence :</label>
+                  <p>{{ this.userData?.driving }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Facebook_link :</label>
+                  <p>{{ this.userData?.socialLink }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Skills :</label>
+                  <p>{{ this.userData?.skills }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane" id="tab_default_4">
+            <p>Lifestyle</p>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="email">Highest Education:</label>
+                  <p>{{ this.userData[0]?.field }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Place of Birth:</label>
+                  <p>{{ this.userData?.placeOfBirth }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Place of Birth:</label>
+                  <p>{{ this.userData?.placeOfBirth }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Place of Birth:</label>
+                  <p>{{ this.userData?.placeOfBirth }}</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="email">Place of Birth:</label>
+                  <p>{{ this.userData?.placeOfBirth }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Place of Birth:</label>
+                  <p>{{ this.userData?.placeOfBirth }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Place of Birth:</label>
+                  <p>{{ this.userData?.placeOfBirth }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Place of Birth:</label>
+                  <p>{{ this.userData?.placeOfBirth }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="panel panel-default">
+      <div class="menu_title">General Information</div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="form-group">
+              <h4>Address :</h4>
+              <label for="email">City :</label>
+              <p>{{ this.userData?.city }}</p>
+            </div>
+            <div class="form-group">
+              <label for="email">Country :</label>
+              <p>{{ this.userData?.country }}</p>
+            </div>
+            <div class="form-group">
+              <label for="email">Nationality :</label>
+              <p>{{ this.userData?.nationality }}</p>
+            </div>
+            <div class="form-group">
+              <label for="email">Date Of Birth :</label>
+              <p>{{ this.userData?.dateOfBirth }}</p>
+            </div>
+            <div class="form-group">
+              <label for="email">Place Of Birth :</label>
+              <p>{{ this.userData?.placeOfBirth }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

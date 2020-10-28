@@ -1,0 +1,15 @@
+<p>companies's offert</p>
+<div class="companies-container">
+  <div class="card" style="width: 18rem" *ngFor = "let element of posts">
+    <img class="card-img-top" src={{this.element?.image}} alt="Card image cap" />
+    <div class="card-body">
+      <h5 class="card-title">{{this.element?.title}}</h5>
+      <p class="card-text">{{this.element?.description}}
+      </p>
+      <div class="rating">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+      </div>
+      <a  class="btn btn-primary" (click)="seeMore(this.element)">See more</a>
+    </div>
+  </div>
+</div>

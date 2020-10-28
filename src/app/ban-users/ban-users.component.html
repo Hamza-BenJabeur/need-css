@@ -1,0 +1,86 @@
+<nav nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+  <img src="../../assets/logo.png" style="width: 10%; height: 10%;" />
+  <a (click)="ban()">Ban</a>
+  <a (click)="verifications()">Verifications</a>
+  <a (click)="membership()">Memberships</a>
+  <a (click)="goback()">disconnect</a>
+</nav>
+<div class="all">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Student</th>
+        <th scope="col">Verify</th>
+        <th scope="col">Reject</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let element of students">
+      <tr>
+        {{ this.element?.username }}
+        <th>
+        </th>
+        <th>
+          <button
+            type="button"
+            class="btn btn-danger"
+            (click)="banStudent(this.element?.id)"
+          >
+            Ban
+          </button>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Company</th>
+        <th scope="col">Verify</th>
+        <th scope="col">Reject</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let element of companies">
+      <tr>
+        {{ this.element?.name }}
+        <th>
+        </th>
+        <th>
+          <button
+            type="button"
+            class="btn btn-danger"
+            (click)="banCompany(this.element?.id)"
+          >
+            Ban
+          </button>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Training</th>
+        <th scope="col">Verify</th>
+        <th scope="col">Reject</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let element of trainingCenters">
+      <tr>
+        {{ this.element?.name }}
+        <th>
+        </th>
+        <th>
+          <button
+            type="button"
+            class="btn btn-danger"
+            (click)="banCenter(this.element?.id)"
+          >
+            Ban
+          </button>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</div>

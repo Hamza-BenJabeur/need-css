@@ -1,0 +1,18 @@
+<div>
+    <label>title</label>
+    <input type = 'text' #title name = 'title' placeholder="{{this.onePost?.title}}"/>
+    <br />
+    <label>contact</label>
+    <input type = 'text' #contact name = 'contact ' placeholder="{{this.onePost?.contact}}"/>
+    <br />
+    <label>description</label>
+    <input type = 'text' #description name = 'description ' placeholder="{{this.onePost?.description}}"/>
+    <br />
+    <label>type</label>
+    <select >
+        <option></option>
+        <option  #type value = "Job Offer">Job Offer</option>
+        <option  #type value = "Intern Ship">Intern Ship</option>
+      </select>
+      <button (click) = "saveVal([title.value, contact.value, description.value, type.value],['title', 'contact', 'description', 'type'],this.onePost.id)"></button>
+</div>

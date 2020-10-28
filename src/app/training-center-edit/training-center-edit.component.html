@@ -1,0 +1,79 @@
+<div class="all">
+    <div class="wrapper">
+      <div class="title">edit traning center info</div>
+      <div class="form">
+        <div class="inputfield">
+          <label>email</label>
+          <input #email type="text" name="email" />
+        </div>
+        <div class="inputfield">
+          <label>Owner</label>
+          <input #owner type="text" name="owner" />
+        </div>
+  
+        <!-- <div class="inputfield">
+          <label>Field</label>
+          <input #fieldval type="text"  name="field" />
+        </div> -->
+<!--   
+        <div class="inputfield">
+          <label>Field</label>
+          <div class="custom_select">
+            <select #field name="field">
+              <option selected="none"></option>
+              <option value="technical">technical</option>
+              <option value="science">science</option>
+              <option value="sells">sells</option>
+            </select>
+          </div>
+        </div> -->
+  
+        <div class="inputfield">
+          <label>Number Of student graduated </label>
+          <input
+            #numberOfStudents
+            type="number"
+            name="numberOfStudents"
+          />
+        </div>
+        <div class="inputfield">
+          <label>About</label>
+          <textarea #about type="textarea" name="about"></textarea>
+        </div>
+        <div class="inputfield">
+          <label>Location</label>
+          <input #location type="text"  name="location" />
+        </div>
+        <div class="inputfield">
+          <label>WebSite</label>
+          <input #website type="text"  name="website" />
+        </div>
+        <div class="inputfield">
+            <label>traning options</label>
+            <input #traningOption type="text"  name="traningOption" />
+          </div>
+          <div class="inputfield">
+            <label>WebSite</label>
+            <input #website type="text"  name="website" />
+          </div>
+        <!-- <div class="inputfield">
+          <label>image</label>
+          <input
+            #logo
+            type="file"
+            
+            name="logo"
+            (change)="imgUpload($event)"
+          />
+        </div> -->
+  
+        <div class="inputfield">
+          <button
+          (click)="takedata([email.value, owner.value, traningOption.value, numberOfStudents.value, location.value, website.value, about.value], [email.name, owner.name, traningOption.name, numberOfStudents.name, location.name, website.name, about.name], this.tcToken )"
+          >
+            submit
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>

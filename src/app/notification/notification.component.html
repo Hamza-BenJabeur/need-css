@@ -1,0 +1,13 @@
+<p>student offert</p>
+<div class="companies-container">
+  <div class="card" style="width: 18rem" *ngFor="let element of application">
+    <div class="card-body">
+      <h5 class="card-title">{{ this.element?.title }}</h5>
+      <p class="card-text">{{ this.element?.studentName }}</p>
+      <button (click)="reject(this.element?.id)">reject</button>
+      <button (click)="accept(this.element?.id)">accept</button>
+      
+     
+    </div>
+  </div>
+</div>

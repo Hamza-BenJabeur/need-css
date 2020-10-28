@@ -1,0 +1,88 @@
+<!-- <div class = "grid-container">
+    <h2>company posts</h2>
+    <div *ngFor = "let element of compPosts" class="border">
+        <h4>title</h4>
+        <h6>{{this.element?.title}}</h6>
+        <h4>logo</h4>
+        <img src ={{this.element?.image}} />
+        <h4>created at</h4>
+        <h6>{{this.element?.id}}</h6>
+        <h4>type</h4>
+        <h6>{{this.element?.type}}</h6>
+        <h4>description</h4>
+        <h6>{{this.element?.description}}</h6>
+        <h4>salary</h4>
+        <h6>{{this.element?.salary}}</h6>
+        <h4>rate</h4>
+        <h6>{{this.element?.rate}}</h6>
+        <h4>contact</h4>
+        <h6>{{this.element?.contact}}</h6>
+        <button class="btn btn-primary" (click) = "editPost(this.element)">update</button>
+        <button class="btn btn-primary" (click) = "deletePost(this.element?.id)">delete</button>
+    </div>
+    <button class="btn btn-primary" (click)= 'backToProfile()'>back to profile</button>
+</div> -->
+<!-- <p>companies's offert</p>
+<div class="companies-container">
+  <div class="card" *ngFor="let element of compPosts">
+    <img
+      class="card-img-top"
+      src="{{ this.element?.image }}"
+      alt="Card image cap"
+    />
+    <div class="card-body">
+      <h4>title</h4>
+      <h6 class="card-title">{{ this.element?.title }}</h6>
+      <h4>created at</h4>
+      <p class="card-text">{{ this.element?.created_at }}</p>
+
+      <h4>type</h4>
+      <p class="card-text">{{ this.element?.type }}</p>
+      <h4>description</h4>
+      <p class="card-text">{{ this.element?.description }}</p>
+      <h4>salary</h4>
+      <p class="card-text">{{ this.element?.salary }}</p>
+      <h4>rate</h4>
+      <p class="card-text">{{ this.element?.rate }}</p>
+      <h4>contact</h4>
+      <p class="card-text">{{ this.element?.contact }}</p>
+
+      <h5 class="card-title">{{ this.element?.title }}</h5>
+      <p class="card-text">{{ this.element?.description }}</p>
+
+      <a class="btn btn-primary" (click)="editPost(this.element)">update</a>
+      <a class="btn btn-primary" (click)="deletePost(this.element?.id)"
+        >delete</a
+      >
+    </div>
+  </div>
+</div> -->
+
+<div class="companies-container">
+  <div class="card" style="width: 18rem" *ngFor="let element of compPosts">
+    <img
+      class="card-img-top"
+      src="{{ this.element?.image }}"
+      alt="Card image cap"
+    />
+    <div class="card-body">
+      <h5 class="card-title">{{ this.element?.title }}</h5>
+      <p class="card-text">{{ this.element?.description }}</p>
+      <div class="rating"></div>
+      <a
+        class="btn btn-success"
+        style="margin-right: 20px"
+        (click)="editPost(this.element)"
+        >update</a
+      >
+      <a
+        class="btn btn-danger"
+        style="margin-left: 20px"
+        (click)="deletePost(this.element?.id)"
+        >delete</a
+      >
+    </div>
+  </div>
+</div>
+
+<button class="btn btn-dark" (click)="backToProfile()">back to profile</button>

@@ -1,0 +1,50 @@
+<nav nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+  <img src="../../assets/logo.png" style="width: 10%; height: 10%;" />
+  <a (click)="ban()">Ban</a>
+  <a (click)="verifications()">Verifications</a>
+  <a (click)="membership()">Memberships</a>
+  <a (click)="goback()">disconnect</a>
+</nav>
+
+<div class="btn-group left" role="group" aria-label="Basic example">
+  <button class="btn btn-secondary" (click)="silver()">
+    Silver weekly update
+  </button>
+  <button class="btn btn-warning" (click)="gold()">Gold weekly update</button>
+  <button class="btn btn-success" (click)="plat()">Plat weekly update</button>
+  <button class="btn btn-info" (click)="all()">Update All</button>
+</div>
+<div class="all">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Training</th>
+        <th scope="col">gold</th>
+        <th scope="col">plat</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let element of trainingCenters">
+      <tr>
+        {{ this.element?.name }} he is : {{this.element?.memberShip}}
+        <th>
+          <button
+            type="button"
+            class="btn btn-warning"
+            (click)="toGold(this.element?.name)"
+          >
+            Gold
+          </button>
+        </th>
+        <th>
+          <button
+            type="button"
+            class="btn btn-success"
+            (click)="toPlat(this.element?.name)"
+          >
+            plat
+          </button>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</div>

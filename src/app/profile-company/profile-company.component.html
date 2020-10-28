@@ -1,0 +1,251 @@
+<!-- <div class="mid">
+	<label for="Search Profil"></label>
+	<input type="text" class="in" name="search" #search />
+	<button class="big" (click)="searchProfil(search.value)">search</button>
+  </div>
+<div>
+
+	<section class="fh5co-about-me left">
+		<div class="about-me-inner site-container">
+			<article class="portfolio-wrapper">
+				<div class="portfolio__img">
+					<img src ={{this.userData?.logo}} class="about-me__profile" alt="about me profile picture">
+				</div>
+				<div class="portfolio__bottom">
+					<div class="portfolio__name">
+						<span>{{this.userData?.name.split('')[0]}}</span>
+						<h2 class="universal-h2">{{this.userData?.name.split('').splice(1, this.userData?.name.length).join('')}}</h2>
+					</div>
+					<p>{{this.userData?.about}}.</p>
+				</div>
+			</article>
+			<div class="about-me__text">
+				<div class="about-me-slider">
+					<div class="about-me-single-slide">
+						<h2 class="universal-h2 universal-h2-bckg">About</h2>
+                        <p>Owner :{{this.userData?.owner}}.</p>
+						<p>Field : {{this.userData?.field}}.</p>
+						<h4>Employees number : {{this.userData?.numberOfEmployees}}</h4>
+						<p class="p-white">Location : {{this.userData?.location}}</p>
+					</div>
+					<div class="about-me-single-slide">
+						<h2 class="universal-h2 universal-h2-bckg">About me 2</h2>
+						<p><span>H</span> e has work appearing or forthcoming in over a dozen venues, including Buzzy Mag, The Spirit of Poe, and the British Fantasy Society journal Dark Horizons. He is also CEO of a company, specializing in custom book publishing and social media marketing services, have created a community for authors to learn and connect.He has work appearing or forthcoming in over a dozen venues, including Buzzy Mag, The Spirit of Poe, and have created a community for authors to learn and connect.</p>
+						<h4>Author</h4>
+						<p class="p-white">See me</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="about-me-bckg"></div>
+	</section>
+	<section class="fh5co-quotes">
+		<div class="site-container">
+			<div class="about-me-slider">
+				<div>
+					<h2 class="universal-h2 universal-h2-bckg">What People Are Saying</h2>
+					<p>“Pudding croissant cake candy canes fruitcake sweet roll pastry gummies sugar plum. Tart pastry danish soufflé donut bear claw chocolate cake marshmallow chupa chups. Jelly danish gummi bears cake donut powder chocolate cake. Bonbon soufflé lollipop biscuit dragée jelly-o. Wafer pastry pudding tiramisu chocolate bar croissant cake. Pie caramels gummies danish.”</p>
+					<img  alt="quotes svg">
+					<h4>David Dixon</h4>
+					<p>Reader</p>
+				</div>
+				<div>
+					<h2 class="universal-h2 universal-h2-bckg">What People Are Saying 2</h2>
+					<p>“Pudding croissant cake candy canes fruitcake sweet roll pastry gummies sugar plum. Tart pastry danish soufflé donut bear claw chocolate cake marshmallow chupa chups. Jelly danish gummi bears cake donut powder chocolate cake. Bonbon soufflé lollipop biscuit dragée jelly-o. Wafer pastry pudding tiramisu chocolate bar croissant cake. Pie caramels gummies danish.”</p>
+					<img alt="quotes svg">
+					<h4>David Dixon</h4>
+					<p>Reader</p>
+				</div>
+			</div>
+		</div>
+	</section>
+   <button (click) = 'updateCompany()'>edit profile</button>
+   <button (click) = 'feed()'>kousaayyyyyyyy</button>
+   <button (click) = 'ownPosts()'>own posts</button>
+   <button class="btn btn-primary" (click) = "studentApply()">student application</button>
+
+</div> -->
+
+<!--navbar-->
+
+<nav
+  class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top"
+  id="navigation-example"
+>
+  <div class="container-fluid">
+    <div class="navbar-wrapper">
+      <a class="navbar-brand">User Profile</a>
+    </div>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      aria-controls="navigation-index"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      data-target="#navigation-example"
+    >
+      <span class="sr-only">Toggle navigation</span>
+      <span class="navbar-toggler-icon icon-bar"></span>
+      <span class="navbar-toggler-icon icon-bar"></span>
+      <span class="navbar-toggler-icon icon-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end">
+      <form class="navbar-form">
+        <div class="input-group no-border">
+          <input
+            type="text"
+            value=""
+            class="form-control"
+            placeholder="Search..."
+            name="search"
+            #search
+          />
+          <button
+            type="submit"
+            (click)="searchProfil(search.value)"
+            class="btn btn-default btn-round btn-just-icon"
+          >
+            <i class="material-icons">search</i>
+            <div class="ripple-container"></div>
+          </button>
+        </div>
+      </form>
+
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link"
+            href="javscript:void(0)"
+            id="navbarDropdownMenuLink"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="material-icons" (click)="studentApply()">notifications</i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <i class="material-icons" (click)="ownPosts()"> Posts</i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--profile-->
+
+<div class="main-panel">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 grid-margin stretch-card">
+        <div class="card">
+          <div class="profile-card">
+            <div class="profile-header">
+              <div class="cover-image">
+                <img src="{{ this.userData?.logo }}" class="img img-fluid" />
+              </div>
+            </div>
+
+            <div class="profile-content">
+              <div class="profile-name">Santosh Ghimire</div>
+              <div class="profile-designation">Webdeveloper</div>
+              <p class="profile-description">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor.
+              </p>
+              <ul class="profile-info-list">
+                <a href="" class="profile-info-list-item"
+                  ><i class="mdi mdi-eye"></i>LogOut</a
+                >
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-8 grid-margin stretch-card">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-title font-weight-bold">About</p>
+            <hr />
+            <p class="card-description">User Information</p>
+            <ul class="about">
+              <li class="about-items">
+                <i class="mdi mdi-account icon-sm"></i
+                ><span class="about-item-name">Name:</span
+                ><span class="about-item-detail">{{
+                  this.userData?.name
+                }}</span>
+              </li>
+              <li class="about-items">
+                <i class="mdi mdi-account icon-sm"></i
+                ><span class="about-item-name">Owner:</span
+                ><span class="about-item-detail">{{
+                  this.userData?.owner
+                }}</span>
+              </li>
+
+              <li class="about-items">
+                <i class="mdi mdi-format-align-left icon-sm"></i
+                ><span class="about-item-name">About Us:</span
+                ><span class="about-item-detail">{{
+                  this.userData?.about
+                }}</span>
+              </li>
+
+              <li class="about-items">
+                <i class="mdi mdi-trophy-variant-outline icon-sm"></i
+                ><span class="about-item-name">Our Field:</span
+                ><span class="about-item-detail">
+                  {{ this.userData?.field }}
+                </span>
+              </li>
+            </ul>
+            <p class="card-description">Contact Information</p>
+            <ul class="about">
+              <li class="about-items">
+                <i class="mdi mdi-phone icon-sm"></i
+                ><span class="about-item-name">Phone:</span
+                ><span class="about-item-detail">+21697798611</span>
+              </li>
+              <li class="about-items">
+                <i class="mdi mdi-map-marker icon-sm"></i
+                ><span class="about-item-name">Address:</span
+                ><span class="about-item-detail">{{
+                  this.userData?.location
+                }}</span>
+              </li>
+              <li class="about-items">
+                <i class="mdi mdi-email-outline icon-sm"></i
+                ><span class="about-item-name">Email:</span
+                ><span class="about-item-detail"
+                  ><a href="">{{ this.userData?.email }}</a></span
+                >
+              </li>
+              <li class="about-items">
+                <i class="mdi mdi-web icon-sm"></i
+                ><span class="about-item-name">Site:</span
+                ><span class="about-item-detail"
+                  ><a href="google.com">{{ this.userData?.website }}</a></span
+                >
+              </li>
+
+              <a class="about-item-edit left">
+                <i class="material-icons" (click)="feed()">Create Posts</i>
+              </a>
+
+              <a class="about-item-edit left">
+                <i class="material-icons" (click)="updateCompany()"
+                  >Edit Profile</i
+                >
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
